@@ -11,6 +11,7 @@ class NewsFeedCard extends StatelessWidget {
   final int numOfLikes;
   final bool hasImage;
   final String? imageUrl;
+  final String? profileImageUrl;
 
   const NewsFeedCard({
     super.key,
@@ -20,6 +21,7 @@ class NewsFeedCard extends StatelessWidget {
     this.numOfLikes = 0,
     this.hasImage = false,
     this.imageUrl,
+    this.profileImageUrl,
   });
 
   @override
@@ -34,10 +36,11 @@ class NewsFeedCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-              CircleAvatar(
+             CircleAvatar(
   radius: 20,
-  backgroundImage: const NetworkImage(
-    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+  backgroundImage: NetworkImage(
+    profileImageUrl ??
+        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
   ),
 ),
                 SizedBox(width: ScreenUtil().setWidth(10)),
@@ -150,10 +153,13 @@ class NewsFeedCard extends StatelessWidget {
 
             Row(
               children: [
-           CircleAvatar(
+          CircleAvatar(
   radius: 20,
-  backgroundImage: const NetworkImage(
-    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
+  backgroundColor: FB_LIGHT_PRIMARY,
+  child: Icon(
+    Icons.account_circle,
+    size: 40,
+    color: FB_DARK_PRIMARY,
   ),
 ),
                 SizedBox(width: ScreenUtil().setWidth(10)),

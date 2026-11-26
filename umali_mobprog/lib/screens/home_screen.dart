@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../constants.dart';
@@ -42,7 +43,35 @@ class _HomeScreenState extends State<HomeScreen> {
           NewsFeedScreen(),
           NotificationScreen(),
           Center(child: Text('Friends')),
-          Center(child: Text('Profile')),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.account_circle,
+                  size: 100,
+                  color: FB_PRIMARY,
+                ),
+                SizedBox(height: 15),
+                Text(
+                  'Anne Camille L. Umali',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: FB_DARK_PRIMARY,
+                  ),
+                ),
+                SizedBox(height: 5),
+                Text(
+                  'INF241',
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: FB_SECONDARY,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ],
         onPageChanged: (page) {
           setState(() {
@@ -51,6 +80,8 @@ class _HomeScreenState extends State<HomeScreen> {
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFFE8D6C8),
+        type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         onTap: _onTappedBar,
@@ -72,7 +103,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Profile',
           ),
         ],
-        selectedItemColor: FB_PRIMARY,
+        selectedItemColor: FB_DARK_PRIMARY,
+        unselectedItemColor: Color(0xFF795548),
         currentIndex: _selectedIndex,
       ),
     );

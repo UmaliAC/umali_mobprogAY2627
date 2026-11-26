@@ -15,6 +15,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 100,
           hasImage: false,
           date: 'October 11',
+          profileImageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150',
         ),
         NewsFeedCard(
           userName: 'Roben Juanatas',
@@ -23,6 +24,7 @@ class NewsFeedScreen extends StatelessWidget {
           hasImage: true,
           imageUrl: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800',
           date: 'December 2',
+          profileImageUrl: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=150',
         ),
         NewsFeedCard(
           userName: 'Angela Sapno',
@@ -30,6 +32,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 85,
           hasImage: false,
           date: 'December 3',
+          profileImageUrl: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=150',
         ),
         NewsFeedCard(
           userName: 'Roselle Garcera',
@@ -38,6 +41,7 @@ class NewsFeedScreen extends StatelessWidget {
           hasImage: true,
           imageUrl: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800',
           date: 'December 4',
+          profileImageUrl: 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=150',
         ),
         NewsFeedCard(
           userName: 'Khloe Santos',
@@ -45,6 +49,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 230,
           hasImage: false,
           date: 'December 5',
+          profileImageUrl: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=150',
         ),
         NewsFeedCard(
           userName: 'Mark Reyes',
@@ -52,6 +57,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 75,
           hasImage: false,
           date: 'December 6',
+          profileImageUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=150',
         ),
         NewsFeedCard(
           userName: 'Jasmine Cruz',
@@ -60,6 +66,7 @@ class NewsFeedScreen extends StatelessWidget {
           hasImage: true,
           imageUrl: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
           date: 'December 7',
+          profileImageUrl: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=150',
         ),
         NewsFeedCard(
           userName: 'Daniel Flores',
@@ -67,6 +74,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 95,
           hasImage: false,
           date: 'December 8',
+          profileImageUrl: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=150',
         ),
         NewsFeedCard(
           userName: 'Sofia Garcia',
@@ -75,6 +83,7 @@ class NewsFeedScreen extends StatelessWidget {
           hasImage: true,
           imageUrl: 'https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800',
           date: 'December 9',
+          profileImageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=150',
         ),
         NewsFeedCard(
           userName: 'Miguel Torres',
@@ -82,6 +91,7 @@ class NewsFeedScreen extends StatelessWidget {
           numOfLikes: 120,
           hasImage: false,
           date: 'December 10',
+          profileImageUrl: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=150&sat=-100',
         ),
       ],
     );

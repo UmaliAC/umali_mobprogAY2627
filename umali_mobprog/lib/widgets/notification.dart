@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'custom_text.dart';
@@ -8,11 +9,13 @@ class NotificationItem extends StatelessWidget {
     required this.name,
     required this.post,
     required this.description,
+    required this.profileImageUrl,
   });
 
   final String name;
   final String post;
   final String description;
+  final String profileImageUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -20,10 +23,9 @@ class NotificationItem extends StatelessWidget {
       padding: EdgeInsets.all(ScreenUtil().setSp(15)),
       child: Row(
         children: [
-          Icon(
-            Icons.person,
-            size: ScreenUtil().setSp(50),
-            color: Colors.black,
+          CircleAvatar(
+            radius: ScreenUtil().setSp(25),
+            backgroundImage: NetworkImage(profileImageUrl),
           ),
           SizedBox(width: ScreenUtil().setWidth(10)),
           Expanded(
