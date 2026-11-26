@@ -1,8 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'screens/home_screen.dart';
 import 'screens/newsfeed_screen.dart';
+import 'screens/notification_screen.dart';
 
 void main() => runApp(const RoblesFacebook());
 
@@ -18,11 +18,12 @@ class RoblesFacebook extends StatelessWidget {
       builder: (_, child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Facebook Replication',
+          title: 'Connect',
           initialRoute: '/home',
           routes: {
             '/newsfeed': (context) => const NewsFeedScreen(),
             '/home': (context) => const HomeScreen(),
+            '/notifications': (context) => const NotificationScreen(),
           },
         );
       },
